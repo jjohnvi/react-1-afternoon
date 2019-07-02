@@ -45,8 +45,7 @@ class FilterObject extends Component {
       <div className="puzzleBox filterObjectPB">
         <h4>Filter Object</h4>
         <span className="puzzleText">
-          {" "}
-          Original {JSON.stringify(this.state.employees, null, 10)}{" "}
+          Original: {JSON.stringify(this.state.employees, null, 10)}
         </span>
         <input
           className="inputLine"
@@ -58,11 +57,9 @@ class FilterObject extends Component {
           className="confirmationButton"
           onClick={() => this.filterEmployees(this.state.userInput)}
         >
-          {" "}
-          Filter{" "}
+          Filter
         </button>
         <span className="resultsBox filterObjectRB">
-          {" "}
           Filtered: {JSON.stringify(this.state.filteredEmployees, null, 10)}
         </span>
       </div>

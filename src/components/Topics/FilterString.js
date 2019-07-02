@@ -31,7 +31,6 @@ class FilterString extends Component {
       <div className="puzzleBox filterStringPB">
         <h4>Filter String</h4>
         <span className="puzzleText">
-          {" "}
           Names: {JSON.stringify(this.state.names, null, 10)}
         </span>
         <input
@@ -42,11 +41,10 @@ class FilterString extends Component {
           className="confirmationButton"
           onClick={() => this.filterNames(this.state.userInput)}
         >
-          {" "}
-          Filter{" "}
+          Filter
         </button>
         <span className="resultsBox filterStringRB">
-          Filtered Names: {JSON.stringify(this.state.names, null, 10)}
+          Filtered Names: {JSON.stringify(this.state.filteredNames, null, 10)}
         </span>
       </div>
     );

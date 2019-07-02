@@ -16,7 +16,7 @@ class EvenAndOdd extends Component {
   }
 
   assignEvenAndOdds(userInput) {
-    let arr = userInput.split(",");
+    let arr = userInput.split("");
     let evens = [];
     let odds = [];
 
@@ -50,16 +50,13 @@ class EvenAndOdd extends Component {
             this.assignEvenAndOdds(this.state.userInput);
           }}
         >
-          {" "}
-          Split{" "}
+          Split
         </button>
         <span className="resultsBox">
-          {" "}
-          Evens: {JSON.stringify(this.state.evenArray)}{" "}
+          Evens: {JSON.stringify(this.state.evenArray)}
         </span>
         <span className="resultsBox">
-          {" "}
-          Odds: {JSON.stringify(this.state.oddArray)}{" "}
+          Odds: {JSON.stringify(this.state.oddArray)}
         </span>
       </div>
     );
